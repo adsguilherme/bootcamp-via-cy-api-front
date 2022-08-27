@@ -24,7 +24,7 @@ describe('US0003 - Funcionalidade: Perfil', () => {
 
     cy.url().should('contain', 'https://conexaoqa.herokuapp.com/criar-perfil')
     cy.url().should('contain', 'https://conexaoqa.herokuapp.com/dashboard')
-    cy.get('[data-test="alert"]').should('is.visible')
+    cy.get('[data-test="alert"]').should('be.visible')
   })
 
   it('Não deve cadastrar perfil sem preencher campos obrigatórios', () => {
